@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT Preview Card</title>
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <style>
+        body {
+            background-color: hsl(217, 54%, 11%);
+        }
+
+        div.container {
+            position: relative;
+            height: 94vh;
+        }
+
+        div#card {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            top: 0;
+            background-color: hsl(216, 50%, 16%);
+            height: 500px;
+            width: 300px;
+            margin: auto;
+        }
+
+        div.images {
+            position: relative;
+        }
+        
+        img.nft {
+            height: 100%;
+            width: 100%;
+        }
+
+        img.viewicon {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            top: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div id="card">
+                <h1>Equilibrium #3429</h1>
+                <div class="images">
+                    <img class="nft" src="images/image-equilibrium.jpg" alt="NFT Equilibrium">
+                    <div class="viewicon"><img src="images/icon-view.svg" alt="View Icon"></div>
+                </div>
+                <p>Our Equilibrium collection promotes balance and calm.</p>
+                <p>0.041</p>
+                <p>3 days left</p>
+                <h2>Creation  of Jules Wyvern</h2>
+            </div>
+        </div>
+    </main> 
+</body>
+</html>
