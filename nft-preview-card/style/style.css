@@ -1,0 +1,132 @@
+    @charset "UTF-8";
+
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+       
+    * {
+        padding: 0px;
+         margin: 0px;
+    }
+
+    body {
+        background-color: hsl(217, 54%, 11%);
+        font-family: 'Outfit', sans-serif;
+    }
+
+    main a {
+        color: hsl(0, 0%, 100%);
+        text-decoration: none;
+    }
+
+    main a:hover {
+        color: hsl(178, 100%, 50%);
+        transition: 0.3s;
+    }
+
+    div.container {
+        position: relative;
+        height: 94vh;
+    }
+
+    div#card {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        top: 0;
+        background-color: hsl(216, 50%, 16%);
+        max-height: 475px;
+        max-width: 275px;
+        margin: auto;
+        padding: 22px;
+        border-radius: 20px;
+    }
+        
+    div#card h1 {
+        font-weight: 600;
+        font-size: 18px;
+        margin: 20px 0px 20px 0px;
+    }
+    
+    div.nft {
+        position: relative;
+        background-image: url(../images/image-equilibrium.jpg);
+        height: 275px;
+        width: 100%;
+        background-size: cover;
+        border-radius: 8px;
+    }
+
+    div.viewicon {
+        position: relative;
+        opacity: 0%;
+        height: 275px;
+        width: 275px;
+        border-radius: 8px;
+    
+    }
+        
+    div.viewicon > img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    div.viewicon:hover {
+        transition: 0.3s;
+        opacity: 100%;
+        background-color: hsla(178, 100%, 50%, 0.63);
+    }
+
+    p.descrition, p.author, div.daysleft > p {
+        font-weight: 300;
+        color: hsl(215, 51%, 70%);
+        padding-bottom: 20px;
+    }
+    
+    div.values {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    
+    div.ethereum {
+        color: hsl(178, 100%, 50%);
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+    div.ethereum > p, div.daysleft > p{
+        padding: 5px;
+    }
+
+    div.ethereum > p, div.daysleft > p {
+        display: inline-block;
+    }
+
+    hr {
+        border-color: hsl(215, 32%, 27%);
+    }
+
+    div.author {
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    div.author > img {
+        border: 1px solid white;
+        border-radius: 80px;
+        height: 30px;
+        margin-top: 15px;
+    }
+
+    div.author > p {
+        margin: 20px 0px 0px 15px;
+        font-weight: 300;
+        color: hsl(215, 51%, 70%);
+        font-size: 14px;
+    }
+
+    footer {
+        
+    }

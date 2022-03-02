@@ -6,62 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NFT Preview Card</title>
     <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
-    <style>
-       
-        * {
-            padding: 0px;
-            margin: 0px;
-        }
-
-       body {
-            background-color: hsl(217, 54%, 11%);
-        }
-
-        div.container {
-            position: relative;
-            height: 94vh;
-        }
-
-        div#card {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            left: 0;
-            top: 0;
-            background-color: hsl(216, 50%, 16%);
-            height: 500px;
-            width: 300px;
-            margin: auto;
-        }
-        
-        div.nft {
-            position: relative;
-            background-image: url(images/image-equilibrium.jpg);
-            height: 300px;
-            width: 300px;
-            background-size: cover;
-        }
-
-        div.viewicon {
-            position: relative;
-            opacity: 0%;
-            height: 300px;
-            width: 300px;
-        
-        }
-        
-        img {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        div.viewicon:hover {
-            opacity: 100%;
-            background-color: hsla(178, 100%, 50%, 0.459);
-        }
-    </style>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
     <main>
@@ -72,11 +17,23 @@
                         <img src="images/icon-view.svg" alt="">
                     </div>
                 </div>
-                <h1>Equilibrium #3429</h1>
-                <p>Our Equilibrium collection promotes balance and calm.</p>
-                <p>0.041</p>
-                <p>3 days left</p>
-                <h2>Creation  of Jules Wyvern</h2>
+                <h1><a href="#">Equilibrium #3429</a></h1>
+                <p class="descrition">Our Equilibrium collection promotes balance and calm.</p>
+                <div class="values">
+                    <div class="ethereum">
+                        <img src="images/icon-ethereum.svg" alt="Ethereum">
+                        <p>0.041 ETH</p>
+                    </div>
+                    <div class="daysleft">
+                        <img src="images/icon-clock.svg" alt="Clock">
+                        <p>3 days left</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="author">
+                    <img src="images/image-avatar.png" alt="Jules Wyvern">
+                    <p>Creation  of <a href="#">Jules Wyvern</a></p>
+                </div>
             </div>
         </div>
     </main> 
